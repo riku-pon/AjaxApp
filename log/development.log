@@ -1,0 +1,2343 @@
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE DATABASE `first_app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `first_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2020-07-13 22:41:16 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 482)
+Completed 200 OK in 23ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 2823)
+
+
+Started GET "/" for ::1 at 2020-07-13 22:41:43 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.7ms | Allocations: 308)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 1073)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 11:10:20 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (uninitialized constant PostsController):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2020-07-14 11:36:09 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 1972)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2020-07-14 12:44:41 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 218)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nomurarikou/projects/first_app/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.43.0
+Time: 1826ms
+Built at: 2020/07/14 12:44:46
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5363ms (Views: 5356.7ms | ActiveRecord: 0.0ms | Allocations: 1401590)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:32:21 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1583ms (Views: 1575.2ms | ActiveRecord: 0.0ms | Allocations: 1393520)
+
+
+Started GET "/" for ::1 at 2020-07-14 15:36:18 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.1ms | Allocations: 197)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 991)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:36:48 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.0ms | Allocations: 6007)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:38:18 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1209ms (Views: 1203.3ms | ActiveRecord: 0.0ms | Allocations: 1393613)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:38:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 5027)
+
+
+Started GET "/" for ::1 at 2020-07-14 15:43:09 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.5ms | Allocations: 197)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 984)
+
+
+Started GET "/" for ::1 at 2020-07-14 15:45:30 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.9ms | Allocations: 428)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 1285)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:46:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 6000)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 15:57:50 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5015)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:00:09 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 6019)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:03:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 5020)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:03:45 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6016)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:04:17 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6019)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:04:54 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6008)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:05:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6023)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:05:22 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 6523)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 16:05:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6022)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20200714080754)
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `memo` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200714080754')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-14 08:19:19.858687', '2020-07-14 08:19:19.858687')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (11.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20200714080754)
+  [1m[35m (5.0ms)[0m  [1m[35mDROP TABLE `posts`[0m
+  [1m[36mprimary::SchemaMigration Destroy (4.0ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200714080754'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (8.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1785429997132287975', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20200714080754)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200714080754')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('1785429997132287975')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('こんにちは！', '2020-07-14 10:08:35.055127', '2020-07-14 10:08:35.055127')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+Started GET "/posts" for ::1 at 2020-07-14 19:37:36 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 221)
+Started GET "/posts" for ::1 at 2020-07-14 19:37:37 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1931ms (Views: 1909.2ms | ActiveRecord: 4.9ms | Allocations: 2164748)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1351ms (Views: 1348.9ms | ActiveRecord: 0.4ms | Allocations: 1746035)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 19:38:49 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 6646)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 19:39:33 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 6632)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 19:40:45 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 7.3ms | ActiveRecord: 4.9ms | Allocations: 9975)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 19:41:17 +0900
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:3:in `index'
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 13.3ms | ActiveRecord: 5.0ms | Allocations: 9696)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 21:13:13 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 11[0m
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 6938)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.9ms | Allocations: 8471)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Post::ActiveRecord_Relation:0x00007fc320ea0b38>
+Did you mean?  connection):
+    1: <h1>トップページ</h1>
+    2: <%= @posts.content %>
+    3: <%= @posts.created_at %>
+  
+app/views/posts/index.html.erb:2
+Started GET "/posts" for ::1 at 2020-07-14 21:17:27 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.3ms | Allocations: 6865)
+
+
+Started GET "/posts" for ::1 at 2020-07-14 21:24:33 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:2
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.3ms | Allocations: 10584)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 09:01:13 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 6671)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 09:06:16 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 2682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 9206)
+
+
+Started GET "/posts" for ::1 at 2020-07-15 09:07:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 106.7ms | ActiveRecord: 0.6ms | Allocations: 12225)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 09:07:44 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 822)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6582)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 09:07:48 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6278)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 11:26:25 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 7296)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 11:26:54 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 671)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 6285)
+
+
+Started GET "/posts" for ::1 at 2020-07-15 11:27:46 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 11361)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 11:27:48 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6294)
+
+
+Started GET "/posts/" for ::1 at 2020-07-15 11:27:57 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 6473)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 11:28:12 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6287)
+
+
+Started GET "/posts" for ::1 at 2020-07-15 11:40:23 +0900
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:3
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 739)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 6456)
+
+
+Started GET "/posts/new" for ::1 at 2020-07-15 11:40:26 +0900
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6287)
+
+
+  [1m[35m (18.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE DATABASE `ajax_app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `ajax_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `ajax_app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `ajax_app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2020-07-30 11:35:36 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.2) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-30 11:36:29 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.2) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-30 11:37:12 +0900
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.2) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2020-07-30 11:37:49 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (44.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) COLLATE utf8_general_ci NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT GET_LOCK('7209158273134045305', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20200714080754)
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `checked` tinyint(1), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200714080754')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.9ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-30 02:37:49.350911', '2020-07-30 02:37:49.350911')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7209158273134045305')[0m
+Started GET "/" for ::1 at 2020-07-30 11:37:49 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.8ms | Allocations: 195)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1266)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:37:53 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.5ms | Allocations: 381)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 1417)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:38:37 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.9ms | Allocations: 309)
+Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 1991)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:38:38 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 26.9ms | Allocations: 189)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 1129)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:38:39 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 578)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:38:40 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 583)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:41:20 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.5ms | Allocations: 193)
+Completed 200 OK in 11ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2492)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:41:21 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 585)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:41:25 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 586)
+
+
+Started GET "/" for ::1 at 2020-07-30 11:42:48 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 570)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:00:26 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nomurarikou/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 584)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:02:51 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1886)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: b880ad84f433abfaeff4
+Version: webpack 4.43.0
+Time: 1997ms
+Built at: 2020/07/30 12:02:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-e86fe38a815e4818ea93.js   3.87 KiB      checked  [emitted] [immutable]  checked
+    js/checked-e86fe38a815e4818ea93.js.map   3.52 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-e86fe38a815e4818ea93.js js/checked-e86fe38a815e4818ea93.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 0 bytes {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 7241ms (Views: 7228.0ms | ActiveRecord: 7.5ms | Allocations: 1399586)
+
+
+Started GET "/" for ::1 at 2020-07-30 12:42:26 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1318)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.3ms | Allocations: 8147)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:43:59 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1359)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 4450557370aeef928862
+Version: webpack 4.43.0
+Time: 1114ms
+Built at: 2020/07/30 14:44:03
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-11004cc63de52e1bd5cc.js   4.02 KiB      checked  [emitted] [immutable]  checked
+    js/checked-11004cc63de52e1bd5cc.js.map   3.76 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-11004cc63de52e1bd5cc.js js/checked-11004cc63de52e1bd5cc.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 155 bytes {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3637ms (Views: 3636.4ms | ActiveRecord: 0.3ms | Allocations: 8273)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:44:12 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 7210)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:45:21 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 7202)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:45:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1359)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms | Allocations: 7210)
+
+
+Started GET "/" for ::1 at 2020-07-30 14:56:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.4ms | Allocations: 7208)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:39:16 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1570)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c7f1a761273fa157e453
+Version: webpack 4.43.0
+Time: 1177ms
+Built at: 2020/07/30 15:39:19
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-d876765852ca91c0fea2.js    4.3 KiB      checked  [emitted] [immutable]  checked
+    js/checked-d876765852ca91c0fea2.js.map   4.09 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-d876765852ca91c0fea2.js js/checked-d876765852ca91c0fea2.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 438 bytes {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3212ms (Views: 3203.7ms | ActiveRecord: 0.4ms | Allocations: 10227)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:39:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 7208)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:39:24 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 7212)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 15:39:34 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"NeBQnudt+IkCHDL5tk+JDaCwdllG1GTGYaRvjg6TW9282WEGEoOocyZR1Jakw8WOAKLl83vu+m6Khdk9hwx7zQ==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 06:39:34.089546', '2020-07-30 06:39:34.089546')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 38ms (ActiveRecord: 4.1ms | Allocations: 6716)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:39:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1397)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.5ms | Allocations: 7247)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:39:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 7225)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:40:00 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms | Allocations: 7229)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 15:40:49 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"PDtT2Z9gzpPPSsQoJVfpbZlZ4dRpKcS7+uNTM2L7C7i1AmJBao6eaesHIkc326XuOUtyflQTWhMRwuWA62QrqA==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 06:40:49.730896', '2020-07-30 06:40:49.730896')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 6ms (ActiveRecord: 0.9ms | Allocations: 2924)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:40:49 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1407)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 7254)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:44:24 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4330)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 8a6b38897c1e84b7b78b
+Version: webpack 4.43.0
+Time: 634ms
+Built at: 2020/07/30 15:44:26
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-3bb4ce7937f77c1e3365.js   4.57 KiB      checked  [emitted] [immutable]  checked
+    js/checked-3bb4ce7937f77c1e3365.js.map   4.41 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-3bb4ce7937f77c1e3365.js js/checked-3bb4ce7937f77c1e3365.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 709 bytes {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 1779ms (Views: 1772.2ms | ActiveRecord: 2.4ms | Allocations: 12021)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:49:45 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 5194)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1a720e450658c014ae42
+Version: webpack 4.43.0
+Time: 654ms
+Built at: 2020/07/30 15:49:48
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-a99ddf746a9baca17d35.js    4.8 KiB      checked  [emitted] [immutable]  checked
+    js/checked-a99ddf746a9baca17d35.js.map   4.68 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-a99ddf746a9baca17d35.js js/checked-a99ddf746a9baca17d35.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 945 bytes {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3084ms (Views: 3072.4ms | ActiveRecord: 2.2ms | Allocations: 1401586)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:50:14 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4383)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 2.1ms | Allocations: 11034)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:50:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 7274)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:50:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1417)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.4ms | Allocations: 7280)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:50:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 7268)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:50:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 7252)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:56:46 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 4235)
+[Webpacker] Compiling...
+Started POST "/posts" for ::1 at 2020-07-30 15:56:48 +0900
+[Webpacker] Compilation failed:
+Hash: cfdd33881f184c9a09f8
+Version: webpack 4.43.0
+Time: 1092ms
+Built at: 2020/07/30 15:56:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-4df1fa4992037419f9cc.js   4.93 KiB      checked  [emitted] [immutable]  checked
+    js/checked-4df1fa4992037419f9cc.js.map   4.85 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-4df1fa4992037419f9cc.js js/checked-4df1fa4992037419f9cc.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 1.05 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3319ms (Views: 3315.2ms | ActiveRecord: 0.3ms | Allocations: 17437)
+
+
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"KtnctDtwGP36Z7dGVowdM7AzkGQ1D1zXwmJQamPHodej4O0szp5IB94qUSlEAFGwECEDzgg1wn8pQ+bZ6liBxw==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 06:56:50.459717', '2020-07-30 06:56:50.459717')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 21ms (ActiveRecord: 9.8ms | Allocations: 8763)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 15:56:53 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"pE8/ryEeK2YN2T1vFmRnHEzggdDbOTFJ7F4wopio2w0tdg431PB7nCmU2wAE6Cuf7PISeuYDr+EHf4YRETf7HQ==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 06:56:53.582991', '2020-07-30 06:56:53.582991')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 6ms (ActiveRecord: 1.0ms | Allocations: 2920)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:56:53 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1474)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 7547)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:56:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1468)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 7361)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:57:53 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1458)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 894e220a1b29c3df1b25
+Version: webpack 4.43.0
+Time: 637ms
+Built at: 2020/07/30 15:57:55
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 1755ms (Views: 1753.6ms | ActiveRecord: 0.4ms | Allocations: 8417)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:59:04 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms | Allocations: 8476)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 15:59:07 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"2JkjeJZ5asuzGSXN8CXRSMftFnDLdS2nVMIXenWfLvRRoBLgY5c6MZdUw6LiqZ3LZ/+F2vZPsw+/46HJ/AAO5A==", "content"=>"", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('', '2020-07-30 06:59:07.999555', '2020-07-30 06:59:07.999555')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 7ms (ActiveRecord: 1.1ms | Allocations: 2920)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:59:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1464)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 7350)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 15:59:08 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"5oQ52T79SiIeDD5qzAqecQ6qfYGXlJJm5D/XgEH5NVYAlLkdv3C0bxjV0IQecfsRTn2q1mxNyLDQ1AJvCijCzg==", "content"=>"", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('', '2020-07-30 06:59:08.975299', '2020-07-30 06:59:08.975299')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 6ms (ActiveRecord: 1.1ms | Allocations: 2955)
+
+
+Started GET "/" for ::1 at 2020-07-30 15:59:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms | Allocations: 7369)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:01:06 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4678)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 2.5ms | Allocations: 12454)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:01:07 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1509)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 7401)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:03:09 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 5293)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1403ms (Views: 1388.3ms | ActiveRecord: 3.0ms | Allocations: 1402636)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 16:03:21 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"G8/9sx8QAeoHy2+2Tk/dY9HxLcBFnyVG7aaHiNSc0LGS9swr6v5RECOGidlcw5HgceO+anilu+4GhzE7XQPwoQ==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 07:03:21.190659', '2020-07-30 07:03:21.190659')[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 11ms (ActiveRecord: 0.7ms | Allocations: 3491)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:03:21 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1538)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 7434)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:04:37 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1543)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms | Allocations: 7440)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:10:19 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1538)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 894e220a1b29c3df1b25
+Version: webpack 4.43.0
+Time: 1067ms
+Built at: 2020/07/30 16:10:22
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3010ms (Views: 3008.3ms | ActiveRecord: 0.3ms | Allocations: 8532)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:12:33 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 4504)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 5.3ms | Allocations: 11516)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:12:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 7424)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:12:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 7430)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:12:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:12:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 7414)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:15:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1533)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: cfab107b2d15bbf80145
+Version: webpack 4.43.0
+Time: 618ms
+Built at: 2020/07/30 16:15:38
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6127f14aec08e2b0d240.js    124 KiB  application  [emitted] [immutable]  application
+js/application-6127f14aec08e2b0d240.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-6127f14aec08e2b0d240.js js/application-6127f14aec08e2b0d240.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-18
+
+Completed 200 OK in 1744ms (Views: 1742.8ms | ActiveRecord: 0.4ms | Allocations: 8473)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:15:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1533)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nomurarikou/contents_exp_apps/AjaxApp/public/packs
+[Webpacker] Hash: b161965620ea6439ff17
+Version: webpack 4.43.0
+Time: 604ms
+Built at: 2020/07/30 16:15:46
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1715ms (Views: 1713.6ms | ActiveRecord: 0.3ms | Allocations: 8573)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:20:01 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1534)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 894e220a1b29c3df1b25
+Version: webpack 4.43.0
+Time: 1075ms
+Built at: 2020/07/30 16:20:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2dec6508912f7aaa9228.js    124 KiB  application  [emitted] [immutable]  application
+js/application-2dec6508912f7aaa9228.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-2dec6508912f7aaa9228.js js/application-2dec6508912f7aaa9228.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-21
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-18
+
+Completed 200 OK in 3528ms (Views: 3502.4ms | ActiveRecord: 0.3ms | Allocations: 8496)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:32:01 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.3ms | Allocations: 7427)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:32:01 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1542)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 7441)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:33:12 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1533)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 15c7bd1e9a7fb62a2ce5
+Version: webpack 4.43.0
+Time: 1041ms
+Built at: 2020/07/30 16:33:15
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c58b099cad8f2fee40c7.js    124 KiB  application  [emitted] [immutable]  application
+js/application-c58b099cad8f2fee40c7.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-c58b099cad8f2fee40c7.js js/application-c58b099cad8f2fee40c7.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 796 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '.../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-22
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '.../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-19
+
+Completed 200 OK in 3319ms (Views: 3318.3ms | ActiveRecord: 0.3ms | Allocations: 8501)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:33:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1533)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a58fb478e8fcfb21205d
+Version: webpack 4.43.0
+Time: 644ms
+Built at: 2020/07/30 16:33:28
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-da2064b4deb329502f82.js    124 KiB  application  [emitted] [immutable]  application
+js/application-da2064b4deb329502f82.js.map    139 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-da2064b4deb329502f82.js js/application-da2064b4deb329502f82.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 798 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '..../checked' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-23
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve '..../memo' in '/Users/nomurarikou/contents_exp_apps/AjaxApp/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-20
+
+Completed 200 OK in 1783ms (Views: 1781.7ms | ActiveRecord: 0.4ms | Allocations: 8499)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:33:43 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1533)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/nomurarikou/contents_exp_apps/AjaxApp/public/packs
+[Webpacker] Hash: bb3252e88526ad6536b1
+Version: webpack 4.43.0
+Time: 612ms
+Built at: 2020/07/30 16:33:45
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-09852631da13cd110e59.js    127 KiB  application  [emitted] [immutable]  application
+js/application-09852631da13cd110e59.js.map    142 KiB  application  [emitted] [dev]        application
+        js/checked-45fdb5de42078e07523a.js   5.96 KiB      checked  [emitted] [immutable]  checked
+    js/checked-45fdb5de42078e07523a.js.map   6.03 KiB      checked  [emitted] [dev]        checked
+           js/memo-d90ce376ef8b3cf85123.js   3.86 KiB         memo  [emitted] [immutable]  memo
+       js/memo-d90ce376ef8b3cf85123.js.map   3.51 KiB         memo  [emitted] [dev]        memo
+                             manifest.json  965 bytes               [emitted]              
+Entrypoint application = js/application-09852631da13cd110e59.js js/application-09852631da13cd110e59.js.map
+Entrypoint checked = js/checked-45fdb5de42078e07523a.js js/checked-45fdb5de42078e07523a.js.map
+Entrypoint memo = js/memo-d90ce376ef8b3cf85123.js js/memo-d90ce376ef8b3cf85123.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 792 bytes {application} [built]
+[./app/javascript/packs/checked.js] 2.09 KiB {checked} {application} [built]
+[./app/javascript/packs/memo.js] 0 bytes {memo} {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1755ms (Views: 1753.6ms | ActiveRecord: 0.3ms | Allocations: 8569)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (4.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (4.9ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:49.075094' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 37ms (Views: 0.7ms | ActiveRecord: 10.9ms | Allocations: 6380)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:49.350287' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 4205)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:49.920156' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 4207)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:33:51 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:51.405651' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 4221)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:33:52 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:52.117710' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 4223)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:52 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:52.822852' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 4211)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:54.058896' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 4205)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:33:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.2ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:54.946436' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 4217)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:33:55 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:55.635651' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4217)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:33:56 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:56.142212' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4217)
+
+
+Started GET "/posts/5" for ::1 at 2020-07-30 16:33:56 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:56.716796' WHERE `posts`.`id` = 5[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 4205)
+
+
+Started GET "/posts/5" for ::1 at 2020-07-30 16:33:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:57.199654' WHERE `posts`.`id` = 5[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 4213)
+
+
+Started GET "/posts/4" for ::1 at 2020-07-30 16:33:58 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:33:58.119818' WHERE `posts`.`id` = 4[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 2.3ms | Allocations: 4219)
+
+
+Started GET "/posts/4" for ::1 at 2020-07-30 16:33:58 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:33:58.549954' WHERE `posts`.`id` = 4[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 4211)
+
+
+Started POST "/posts" for ::1 at 2020-07-30 16:34:01 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"+UadNz5xcT7uhXum3NtAFH+eH/DLzC1xN8YvHZR7Dk1wf6yvy58hxMrIncnOVwyX34yMWvb2s9nc55muHeQuXQ==", "content"=>"時には誰かを", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('時には誰かを', '2020-07-30 07:34:01.095234', '2020-07-30 07:34:01.095234')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 7ms (ActiveRecord: 0.9ms | Allocations: 3221)
+
+
+Started GET "/" for ::1 at 2020-07-30 16:34:01 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1570)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 7461)
+
+
+Started GET "/posts/8" for ::1 at 2020-07-30 16:34:01 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:01.775788' WHERE `posts`.`id` = 8[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 4211)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:34:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:02.274790' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 4207)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:34:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:02.795064' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.5ms | Allocations: 4215)
+
+
+Started GET "/posts/5" for ::1 at 2020-07-30 16:34:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:03.421423' WHERE `posts`.`id` = 5[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 4217)
+
+
+Started GET "/posts/4" for ::1 at 2020-07-30 16:34:39 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:40.000547' WHERE `posts`.`id` = 4[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 4209)
+
+
+Started GET "/posts/3" for ::1 at 2020-07-30 16:34:40 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:40.454203' WHERE `posts`.`id` = 3[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4203)
+
+
+Started GET "/posts/2" for ::1 at 2020-07-30 16:34:40 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:40.982019' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4211)
+
+
+Started GET "/posts/1" for ::1 at 2020-07-30 16:34:41 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2020-07-30 07:34:41.490452' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 4217)
+
+
+Started GET "/posts/1" for ::1 at 2020-07-30 16:34:41 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:41.973903' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 2.9ms | Allocations: 4205)
+
+
+Started GET "/posts/2" for ::1 at 2020-07-30 16:34:42 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:42.527014' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 4211)
+
+
+Started GET "/posts/3" for ::1 at 2020-07-30 16:34:42 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:42.929264' WHERE `posts`.`id` = 3[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 4209)
+
+
+Started GET "/posts/4" for ::1 at 2020-07-30 16:34:43 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:43.323498' WHERE `posts`.`id` = 4[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 4203)
+
+
+Started GET "/posts/5" for ::1 at 2020-07-30 16:34:43 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.5ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:43.715688' WHERE `posts`.`id` = 5[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 4207)
+
+
+Started GET "/posts/6" for ::1 at 2020-07-30 16:34:44 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:44.134105' WHERE `posts`.`id` = 6[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 2.5ms | Allocations: 4217)
+
+
+Started GET "/posts/7" for ::1 at 2020-07-30 16:34:44 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:44.539646' WHERE `posts`.`id` = 7[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 4221)
+
+
+Started GET "/posts/8" for ::1 at 2020-07-30 16:34:44 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2020-07-30 07:34:44.909697' WHERE `posts`.`id` = 8[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 4229)
+
+
